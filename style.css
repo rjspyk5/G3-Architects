@@ -34,10 +34,18 @@ img{
     text-align: center;
 }
 
+.btn-orange{
+    border: 0;
+    background-color: coral;
+    padding: 20px 25px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
 /* Header Desgain */
 
 header{
-    padding: 50px 240px;
+    padding: 50px 180px;
     background: rgba(255, 144, 14, 0.10);
 }
 
@@ -59,19 +67,47 @@ nav ul a{
 .banner-title{
     font-size: 3.5rem;
     font-weight: 700px;
+    margin-bottom: 1%;
 }
 .banner-content{
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2% auto;
 }
 
+.banner{
+    margin-top: 3%;
+}
+.banner p{
+    margin-bottom: 2%;
+}
 
 
 
 @media screen and (max-width:576px) {
     
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-title{
+        font-size:3rem ;
+    }
+
+    header{
+        padding: 50px 10px;
+    }
+
+    .logo{font-size: 2.5rem;}
+
+    .btn-orange{
+       
+        padding: 15px 20px;
+    }
 }
 
-@media screen and (min-width:577px) and (max-width:786px) {
-    
+@media screen and (min-width:577px) and (max-width:992px) {
+    header{
+        padding: 50px 30px;
+    }
+    .logo{font-size: 2.5rem;}
 }
