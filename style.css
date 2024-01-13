@@ -42,11 +42,18 @@ img{
     color: whitesmoke;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Header Desgain */
 
 header{
     padding: 50px 180px;
     background: rgba(255, 144, 14, 0.10);
+}
+main{
+    padding: 50px 180px; 
 }
 
 nav ul li{
@@ -81,6 +88,21 @@ nav ul a{
     margin-bottom: 2%;
 }
 
+/* Main Desgain */
+ 
+    /* Quick list section */
+    .quick-list-section,.quick-list-img-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 3%;
+
+    
+    }
+
+    .quick-list-content p{
+        margin: 10px 0px;
+    }
 
 
 @media screen and (max-width:576px) {
@@ -93,9 +115,11 @@ nav ul a{
         font-size:3rem ;
     }
 
-    header{
+    header,main{
         padding: 50px 10px;
     }
+
+
 
     .logo{font-size: 2.5rem;}
 
@@ -103,10 +127,19 @@ nav ul a{
        
         padding: 15px 20px;
     }
+    .quick-list-section{
+        grid-template-columns: repeat(1,1fr);
+       
+    
+    }
+
+    .quick-list-content{margin: 15px 0px;}
+
+  
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    header{
+    header,main{
         padding: 50px 30px;
     }
     .logo{font-size: 2.5rem;}
