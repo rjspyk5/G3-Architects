@@ -143,13 +143,31 @@ nav ul a{
     .some-fact{
         margin: 3% 0%;
     }
+/* Card section */
 
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,187px);
+    justify-content: space-around;
+    margin: 80px auto;
+}
     .card-container .card{
-        border-radius: 8px;
+ border-radius: 8px;
 border: 1px solid #FF900E;
 text-align: center;
 padding: 40px;
 
+
+    }
+
+    .card img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .sponsor{
+        max-width: 400px;
+        margin: 0 auto;
     }
 
 @media screen and (max-width:576px) {
@@ -191,7 +209,15 @@ padding: 40px;
         grid-template-columns: repeat(1,1fr);
     
     }
-
+.card-container{
+    grid-template-columns: repeat(1,1fr);
+   
+    margin: 40px auto;
+   
+}
+.card{
+    margin-bottom: 4%;
+}
   
 }
 
@@ -211,4 +237,9 @@ padding: 40px;
    }
 
    .quick-list-img-container{order: 1;}
+   .card-container{
+    grid-template-columns: repeat(2,auto);
+    row-gap: 15%;
+
+}
 }
