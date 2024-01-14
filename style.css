@@ -170,6 +170,34 @@ padding: 40px;
         margin: 0 auto;
     }
 
+/* log styles */
+.sponsor-logos{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+   
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+
+}
+.s-logo{
+    max-width: 100px;
+}
+
+/* copyright style */
+.copyright{
+    background-color: #FFF4E7;
+    padding: 39px;
+}
+.copyright-text{
+    font-size: 20px;
+    color: #424242;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
 @media screen and (max-width:576px) {
     
     nav{
@@ -218,8 +246,14 @@ padding: 40px;
 .card{
     margin-bottom: 4%;
 }
+.sponsor-logos{
+    grid-template-columns: repeat(1,auto);
+   gap: 20px;
+}
   
 }
+
+
 
 @media screen and (min-width:577px) and (max-width:992px) {
     header,main{
